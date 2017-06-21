@@ -1,11 +1,9 @@
 ---
-title: start
-date: 2017-06-19 14:03:25
+title: 开启博客之旅
+date: 2017-06-21 15:23:54
 categories: 随笔
-tags: life
+tags: 随笔
+encrypt: true
+enc_pwd: 123456
 ---
-{% blockquote Paddy.luo %}
- a  little dog
-{% endblockquote %}
-
-{% img http://ors76sh19.bkt.clouddn.com/star.jpg %}
+   回家写开篇，哇哈哈

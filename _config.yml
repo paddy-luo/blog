@@ -5,8 +5,8 @@
 # Site
 title: Paddy's Blog
 subtitle:
-description: decripe what I thought
-author: Paddy.luo
+description: 
+author: paddy
 language: zh-Hans
 timezone:
 
@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: false  
   tab_replace:
 
 # Category & Tag
@@ -63,11 +63,34 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: yilia
+
+#jsonContent
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+#encrypt
+encrypt:
+  password: 123456
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: ssh://git@github.com:paddy-luo/blog.git
+  repository: https://github.com/paddy-luo/paddy-luo.github.io.git
   branch: master
