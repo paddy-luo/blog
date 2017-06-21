@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Paddy&#39;s Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-06-21T07:59:19.428Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>paddy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开启博客之旅</title>
+    <link href="http://yoursite.com/2017/06/21/Start/"/>
+    <id>http://yoursite.com/2017/06/21/Start/</id>
+    <published>2017-06-21T07:23:54.000Z</published>
+    <updated>2017-06-21T07:59:19.428Z</updated>
+    
+    <content type="html"><![CDATA[<script src=/js/crypto-js.js></script><script>
+function doDecrypt(pwd, onError) {
+	console.log("in doDecrypt");
+	var txt = document.getElementById("enc_content").innerHTML;
+	var plantext;
+	try {
+	  	var bytes = CryptoJS.AES.decrypt(txt, pwd);
+		plaintext = bytes.toString(CryptoJS.enc.Utf8);
+	} catch(err) {
+		if(onError) {onError(err);}
+		return;
+	}
+	document.getElementById("enc_content").innerHTML = plaintext;
+	document.getElementById("enc_content").style.display = "block";
+   document.getElementById("enc_passwd").style.display = "none";
+}
+</script>
+<div id="enc_content" style="display:none">U2FsdGVkX19xEFYwXPoh99Vv3hIq5V8Z0Sdq1b9VAq9PbLwIfrMqk2DIHjujHvd6YiAUKFwyWvOm0FOJtR9Fsg==</div><div id="enc_passwd"> <input id="enc_pwd_input" type="text" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
+<script>
+var onError = function(error) {
+	document.getElementById("enc_error").innerHTML = "password error!"
+};
+function decrypt() {
+var passwd = document.getElementById("enc_pwd_input").value;
+console.log(passwd);
+doDecrypt(passwd, onError);
+}
+</script>
+</div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=/js/crypto-js.js&gt;&lt;/script&gt;&lt;script&gt;
+function doDecrypt(pwd, onError) {
+	console.log(&quot;in doDecrypt&quot;);
+	var txt = document.getEleme
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>

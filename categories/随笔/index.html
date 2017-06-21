@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Paddy&#39;s Blog</title>
+  <title>Category: 随笔 | Paddy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Paddy&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/categories/随笔/index.html">
 <meta property="og:site_name" content="Paddy&#39;s Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Paddy&#39;s Blog">
@@ -149,62 +149,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Start" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/06/21/Start/" class="archive-article-date">
+  	<time datetime="2017-06-21T07:23:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-21</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/21/Start/">开启博客之旅</a>
+      <a class="archive-article-title" href="/2017/06/21/Start/">开启博客之旅</a>
     </h1>
   
 
-        
-        <a href="/2017/06/21/Start/" class="archive-article-date">
-  	<time datetime="2017-06-21T07:23:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <script src=/js/crypto-js.js></script><script>
-function doDecrypt(pwd, onError) {
-	console.log("in doDecrypt");
-	var txt = document.getElementById("enc_content").innerHTML;
-	var plantext;
-	try {
-	  	var bytes = CryptoJS.AES.decrypt(txt, pwd);
-		plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {onError(err);}
-		return;
-	}
-	document.getElementById("enc_content").innerHTML = plaintext;
-	document.getElementById("enc_content").style.display = "block";
-   document.getElementById("enc_passwd").style.display = "none";
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX19xEFYwXPoh99Vv3hIq5V8Z0Sdq1b9VAq9PbLwIfrMqk2DIHjujHvd6YiAUKFwyWvOm0FOJtR9Fsg==</div><div id="enc_passwd"> <input id="enc_pwd_input" type="text" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -216,7 +188,7 @@ doDecrypt(passwd, onError);
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -229,24 +201,17 @@ doDecrypt(passwd, onError);
 	</div>
 
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/21/Start/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -268,11 +233,11 @@ doDecrypt(passwd, onError);
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		root: "/",
 		innerArchive: true,
